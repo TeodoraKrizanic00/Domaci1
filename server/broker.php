@@ -31,7 +31,7 @@ class Broker{
         }
         return $response;
     }
-    public function izmeni($upit){
+    public function izvrsiUpit($upit){
         $rezultat=$this->mysqli->query($upit);
         $response=[];
         $response['status']=(!$rezultat)?false:true;
